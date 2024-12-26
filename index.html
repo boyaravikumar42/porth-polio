@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravi kumar Boya</title>
-    <link rel="icon" href="/assets/img/one.jpg">
+    <link rel="icon" href="./assets/img/one.jpg">
     <!--local style sheet-->
     <link rel="stylesheet" href="./assets/style.css">
     <!--font awesome icons cdn-->
@@ -16,9 +16,11 @@
         <div>
             <a href="#" class="logo" >Ravi Kumar</a>
         </div>
-        <div onclick="menuEnable()"><i class="fa-solid fa-bars" id="bar"></i></div>
+        <div>
+            <i class="fa-solid fa-bars-staggered"id="bar" onclick="menuEnable()"></i>
+            <i class="fa-solid fa-xmark "id="bar1" onclick="menuDisable()"></i>
+        </div>
         <nav class="navbar" id="navbar" onclick="menuDisable()">
-            <a href="#" style="display: none;"><i class="fa-solid fa-angle-right cross"></i></a>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -185,43 +187,108 @@
         <div class="resume-container">
             <div class="row">
                 <div class="title">
-                    <h1>Education</h1></div>
-                <div class="education">
-                    <div class="content">
-                        <h2><span>Bachelor Of Technology - CSE</span></h2>
-                        <h3><i>2022 - 2026</i></h3>
-                        <p>Rajeev Gandhi Memorial college Of Engineering And Technology, Nandyal (Autonomous)</p>
-                        <h3><i>CGPA : 9.1</i></h3>
+                    <h1>Education</h1>
+                </div>
+                <div class="education skills-wrap">
+                    <div>
+                        <div class="item">
+                            <div class="content">
+                                <h2><span>Bachelor Of Technology - CSE</span></h2>
+                                <h3><i>2022 - 2026</i></h3>
+                                <p>Rajeev Gandhi Memorial college Of Engineering And Technology, Nandyal (Autonomous)</p>
+                                <h3><i>CGPA : 9.1</i></h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <h2><span>Intermediate - MPC</span></h2>
+                            <h3><i>2020 - 2022</i></h3>
+                            <p>AP Model Junior College, Aspari</p>
+                            <h3><i>Marks : 777<span> / </span>1000</i></h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <h2><span>Intermediate - MPC</span></h2>
-                        <h3><i>2020 - 2022</i></h3>
-                        <p>AP Model Junior College, Aspari</p>
-                        <h3><i>Marks : 777<span> / </span>1000</i></h3>
-                    </div>
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="title">
-                    <h1>Certifications</h1></div>
+                    <h1>Certifications</h1>
+                </div>
                 <div class="skills-wrap">
-                    <div class="content">
-                       <p>Certified on Java in Hackerrank</p> 
-                       <p>Certified on Python in Hackerrank</p> 
-                       <p>Certified on Problem - solving in Hackerrank</p> 
-                       <p>Certified on Fundamentals of HTML and CSS by EDX</p>
+                    <div class>
+                       <div class="item">
+                       <div class="content">
+                        <div class="link">
+                            <h3>Certified on Java in Hackerrank</h3>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                        <p>In 2024</p>
+                       </div>
+                       </div> 
+                       <div class="item">
+                            <div class="content">     
+                                <div class="link">
+                                    <h3>Certified on Python in Hackerrank</h3>
+                                    <a href=""><i class="fa-solid fa-link"></i></a>
+                                </div>
+                                <p>In 2024</p>
+                            </div>
+                       </div>
+                       <div class="item">
+                            <div class="content">
+                                <div class="link">
+                                    <h3>Certified on Problem - solving in Hackerrank</h3>
+                                    <a href=""><i class="fa-solid fa-link"></i></a>
+                                </div>
+                                <p>In 2024</p>
+                            </div>
+                       </div>
+                       <div class="item">
+                        <div class="content">
+                            <div class="link">
+                                <h3>Certified on Fundamentals of HTML and CSS by EDX</h3>
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        <p>In 2024</p>
+                        </div>
+                       </div>
                     </div>   
                 </div>
             </div>
             <div class="row">
                 <div class="title">
-                    <h1>Achievements</h1></div>
+                    <h1>Achievements</h1>
+                </div>
                 <div class="skills-wrap">
-                    <div class="content">
-                       <p>3 prizes in Web Designing</p> 
-                       <p>solved 140+ problems in Leetcode</p> 
-                       <p>5 star on java in Hackerrank</p> 
-                    </div>   
+                
+                       <div class="item">
+                        <div class="content">
+                            <div class="link">
+                                <p>3 prizes in Web Designing</p>
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="item">
+                        <div class="content">
+                            <div class="link">
+                                <p>solved 140+ problems in Leetcode</p>
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div> 
+                        </div>
+                       </div> 
+                       <div class="item">
+                        <div class="content">
+                            <div class="link">
+                                <p>5 star on java in Hackerrank</p>  
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div>
+                             
+                        </div>
+                       </div>  
+                        
+                       
                 </div>
             </div>
 

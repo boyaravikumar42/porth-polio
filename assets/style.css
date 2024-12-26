@@ -60,7 +60,7 @@ body{
     cursor: default;
 
 }
-.header #bar{
+.header #bar,.header #bar1{
     display: none;
     font-weight: 700;
     font-size: 3rem;
@@ -300,19 +300,35 @@ span{
     grid-template-columns: 1fr 1fr;
     gap:2.4rem;
 }*/
-.skills-wrap{
-    border-left: .3rem solid white ;
-    padding-left: 2rem;
-}
+
 .resume-container .content{
     padding: 1rem 1.4rem;
-    margin-top: 1rem;
     box-shadow: 0 0 2px var(--main-color);
-    margin-bottom: 2rem;
-    border-left: .3rem solid white;
     &&:hover{
         box-shadow: 0 0 10px var(--main-color);
         
+    }
+}
+.resume-container .title{
+    margin-left:2rem;
+    font-size: medium;
+}
+.resume-container .skills-wrap{
+    margin:2rem 0rem;
+}
+.item{
+    border-left: .2rem solid white;
+    padding-left:2rem;
+    position:relative;
+    &::before{
+        position:absolute;
+        content: "";
+        width:1rem;
+        height: 1rem;
+        background-color: #59b2f4;
+        left:-0.6rem;
+        top:0.1rem;
+        border-radius: 50%;
     }
 }
 .resume-container .content h2{
@@ -325,6 +341,15 @@ span{
 .resume-container .content p{
     font-size: 1.6rem;
     padding-bottom: .6rem;
+}
+.resume-container .content .link{
+    display: flex;
+    justify-content: space-between;
+    & i{
+        font-size: large;
+        color: var(--main-color);
+        padding:.3rem .4rem;
+    }
 }
 /*---------------- services section ---------------*/
 .skills-container{
@@ -596,12 +621,6 @@ span{
         gap: 2.4rem;
         background-color: var(--snd-bg-color); 
         padding: 3rem 0rem;
-    }
-    .navbar a{
-        border:2px solid var(--main-color);
-        width:auto;
-        padding:.8rem ;
-        border-radius: 2rem;
     }
     .home{
         flex-wrap:wrap ;
