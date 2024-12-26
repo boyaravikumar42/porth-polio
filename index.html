@@ -13,11 +13,15 @@
 <body>
     <!----------- header section -------------->
     <header class="header">
-        <a href="#" class="logo">Ravi Kumar</a>
-        <i class="fa-solid fa-bars" id="bar"></i>
-        <nav class="navbar">
+        <div>
+            <a href="#" class="logo" >Ravi Kumar</a>
+        </div>
+        <div onclick="menuEnable()"><i class="fa-solid fa-bars" id="bar"></i></div>
+        <nav class="navbar" id="navbar" onclick="menuDisable()">
+            <a href="#" style="display: none;"><i class="fa-solid fa-angle-right cross"></i></a>
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#resume">Resume</a>         
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -32,7 +36,7 @@
         <div class="home-content">
             <h2>Hi,Myself</h2>
             <h1>Boya Ravi kumar</h1>
-            <h2 class="home-h2">And I'm a <span class="span">Frontend Developer</span></h2>
+            <h2 class="home-h2">And I'm a <span class="span">Full - Stack Developer</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti facilis suscipit velit tempore reprehenderit libero, dolor incidunt sit dolorum fuga illum asperiores in placeat magnam itaque alias minima dolore vitae.
            sapiente. Distinctio exercitationem possimus nobis ab blanditiis ea deserunt dignissimos numquam eaque, hic consectetur earum neque ut? Explicabo, autem delectus!</p>
           
@@ -53,8 +57,10 @@
             <h2>About <span>Me</span></h2>
             <h3>Full-stack Developer</h3>
             <p><span><i class="fa-solid fa-angle-right"></i>&nbsp Email:</span> &nbsp boyaravikumar42@gmail.com</p>
-            <p><span><i class="fa-solid fa-angle-right"></i>&nbsp Degree:</span>&nbsp B.Tech - (Computer Science and Engineering)</p>
-            <p><span><i class="fa-solid fa-angle-right"></i>&nbsp Location :</span> &nbsp Nandyal, AP, India</p><br>
+            <p><span><i class="fa-solid fa-angle-right"></i>&nbsp Degree:</span>&nbsp B.Tech - CSE</p>
+            <p><span><i class="fa-solid fa-angle-right"></i>&nbsp Location :</span> &nbsp Nandyal, AP, India</p>
+            <p><span><i class="fa-solid fa-angle-right"></i>&nbsp Phno:</span> &nbsp +91 9573796134</p>
+            <br>
             <p>&nbsp &nbsp &nbsp Enthusiastic and self-motivated Computer Science fresher with a
                 strong academic background and foundational knowledge in
                 software development, algorithms, and database management.
@@ -89,6 +95,90 @@
             <a href="#" class="btn">click here</a>
         </div>
     </section>
+     <!----------------- my skills section -------------->
+     <section class="skills"id="skills">
+        <h2>My <span>skills</span></h2>
+        <div class="skill-wrapper">
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>Java</p>
+                    <p>90%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>Python</p>
+                    <p>85%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>OOPS (java)</p>
+                    <p>90%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>  
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>DSA</p>
+                    <p>75%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>HTML, CSS, Javascript</p>
+                    <p>90%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>  
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>React JS</p>
+                    <p>75%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>  
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>mySQL, MongoDB</p>
+                    <p>75%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>  
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>Django</p>
+                    <p>75%</p>
+                </div>
+                <div class="bar">
+                    <span></span>
+                </div>  
+            </div>
+        </div>
+     </section>
     <!----------------- resume section -------------->
     <section class="resume" id="resume">
         <h2 class="heading"> <span>Res</span>ume</h2>
@@ -101,11 +191,13 @@
                         <h2><span>Bachelor Of Technology - CSE</span></h2>
                         <h3><i>2022 - 2026</i></h3>
                         <p>Rajeev Gandhi Memorial college Of Engineering And Technology, Nandyal (Autonomous)</p>
+                        <h3><i>CGPA : 9.1</i></h3>
                     </div>
                     <div class="content">
                         <h2><span>Intermediate - MPC</span></h2>
                         <h3><i>2020 - 2022</i></h3>
                         <p>AP Model Junior College, Aspari</p>
+                        <h3><i>Marks : 777<span> / </span>1000</i></h3>
                     </div>
                 </div>
             </div>
@@ -195,7 +287,7 @@
             </div>
         </div>
     </section>
-     <!----------------- projects Section -------------->
+     <!----------------- contact Section -------------->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="" class="input-wrapper">
@@ -211,7 +303,7 @@
             <input type="submit" value="Send Me"class="btn"/>
         </form>
     </section>
-
+ <!----------------- footer Section -------------->
     <footer class="footer">
         <div class="skill-icons">
             <h1><i class="fa-brands fa-git-alt one"></i></h1>
@@ -223,13 +315,23 @@
         <h1><i class="fa-brands fa-css3-alt"></i></h1>
         </div>
         <div class="footer-wrap">
-            <h1>Developed by <span>Ravi kumar Boya</span> with love and passion</h1>
+            <p>Developed by <span>Ravi kumar Boya</span> with love and passion</p>
+            <div class="top-icon">
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
             <div class="network">
                 <a href="#"><i class="fa-brands fa-linkedin-in social-media"></i></a>
                 <a href="#"><i class="fa-brands fa-github social-media"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope social-media"></i></a>
            </div>
+           <div class="views">
+            <p>v</p>
+        </div>
         </div>
     </footer>
+
+     <!----------------- script Section -------------->
+     <script src="./assets/script.js"></script>
+
 </body>
 </html>

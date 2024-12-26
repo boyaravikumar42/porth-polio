@@ -125,6 +125,7 @@ span{
 }
 .home-content p{
     font-size: 1.6rem;
+    letter-spacing: .1rem;
 }
  .social-media{
     color:var(--main-color);
@@ -181,8 +182,114 @@ span{
 .about-content p{
     font-size: 1.6rem;
     padding-bottom: .6rem;
+    letter-spacing: .1rem;
 }
-/*---------------- education  section ---------------*/
+/*---------------- skills  section ---------------*/
+.skills h2{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+.skill-wrapper{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2.5rem 6rem;
+}
+/*.skill-bar{
+    border: 1px solid var(--main-color);
+}*/
+.skill-bar .skill-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:0.8rem;
+}
+
+.skill-bar .skill-info p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.skill-bar .bar{
+    width: 100%;
+    height: 0.7rem;
+    position: relative;
+    border-radius: 0.4rem;
+    background-color: var(--snd-bg-color);
+
+}
+.skill-bar .bar span{
+    display: inline-block;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 0.4rem;
+    transition: all .3s linear;    
+}
+.skill-bar{
+    &:nth-child(1) span{
+        width:90%;
+        animation:moment 1s;
+    }
+    &:nth-child(2) span{
+        width:85%;
+        animation:moment 1s;
+    }
+    &:nth-child(3) span{
+        width:90%;
+        animation:moment 1s;
+    }
+    &:nth-child(4) span{
+        width:75%;
+        animation:dj 1s;
+    }
+    &:nth-child(5) span{
+        width:90%;
+        animation:moment 1s;
+    }
+    &:nth-child(6) span{
+        width:75%;
+        animation:dj 1s;
+    }
+    &:nth-child(7) span{
+        width:75%;
+        animation:moment 1s;
+        animation:dj 1s;
+    }
+    &:nth-child(8) span{
+        width:75%;
+        animation:dj 1s;
+    }
+
+   
+}
+@keyframes dj {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+    
+}
+@keyframes moment {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width:712px) {
+
+    .skill-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+
+
+/*---------------- resume  section ---------------*/
 .resume .heading{
     font-size: 4rem;
     padding-bottom: 3rem;
@@ -193,14 +300,19 @@ span{
     grid-template-columns: 1fr 1fr;
     gap:2.4rem;
 }*/
+.skills-wrap{
+    border-left: .3rem solid white ;
+    padding-left: 2rem;
+}
 .resume-container .content{
     padding: 1rem 1.4rem;
     margin-top: 1rem;
     box-shadow: 0 0 2px var(--main-color);
     margin-bottom: 2rem;
+    border-left: .3rem solid white;
     &&:hover{
-        box-shadow: 0 0 5px var(--main-color);
-        transform: scaleY(1.1);
+        box-shadow: 0 0 10px var(--main-color);
+        
     }
 }
 .resume-container .content h2{
@@ -293,28 +405,29 @@ span{
     left:0%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgb(0,0,0,0),var(--main-color));
+    background: linear-gradient(rgba(0,0,0,0.5),var(--main-color));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateY(100%);
+    transform: translateY(110%);
+    padding: 1rem;
     transition: .5s ease;
     
 }
 .project-box:hover .project-content{
-    transform: translateY(0);
+    transform: translateY(10%);
 }
 
 .project-content h2{
-  color:rgba(5, 15, 52, 0.947);
+  color:var(--text-color);
   font-size: 3rem;
-  text-shadow: 0 0 .1rem var(--main-color);
 }
 .project-content p{
-    color:rgba(5, 15, 52, 0.947);
+    color:var(--bg-color);
     font-size: 1.6rem;
     font-weight: 400;
+    text-align: center;
 }
 .project-content a{
     display: inline-flex;
@@ -371,37 +484,6 @@ span{
 .contact form .btn{
     margin: 2rem auto;
     cursor: pointer;
-}
-/*---------------- Responsive  code ---------------*/
-@media screen and (max-width:612px) {
-    .contact form .input-box input{
-        width:100%;
-    }
-    .header #bar{
-        display: block;
-    }
-    .navbar{
-        display: none;
-    }
-    .home{
-        flex-wrap:wrap ;
-    }
-    .home .image{
-        margin-top: 4rem;
-        width:60vw;
-    }
-
-    .about{
-        flex-wrap: wrap;
-    }
-    .about .about-img img{
-        width: 60vw;
-    }
-
-    .projects-wrap{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
 }
 
 /* ------- floating Icons -------*/
@@ -465,6 +547,81 @@ span{
     align-items: center;
     background-color: var(--snd-bg-color);
     padding: 2rem 8rem;
+    position: relative;
+}
+.footer-wrap p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.footer-wrap .top-icon {
+    position: absolute;
+    top:15%;
+    left: 90%;
+    border:2px solid var(--main-color);
+    padding: .2rem .6rem;
+    border-radius: .6rem;
+    box-shadow: 0 0 .2rem var(--main-color);
+
+       
+}
+.footer-wrap .top-icon i{
+    font-size: 2.5rem;
+    font-weight: 600;
+    transform: rotateZ(-90deg);
+    color: var(--main-color);
+}
+.footer-wrap .views {
+    position: absolute;
+    top:60%;
+    left: 90%;
+    padding: .2rem .6rem;
+}
+/*---------------- Responsive  code ---------------*/
+@media screen and (max-width:712px) {
+    .contact form .input-box input{
+        width:100%;
+    }
+    .header #bar{
+        display: block;
+    }
+    .navbar{
+        display:none;
+        width:100%;
+        height:auto;
+        position: absolute;
+        top:100%;
+        left:0%;
+        flex-direction: column;
+        justify-content: start;
+        gap: 2.4rem;
+        background-color: var(--snd-bg-color); 
+        padding: 3rem 0rem;
+    }
+    .navbar a{
+        border:2px solid var(--main-color);
+        width:auto;
+        padding:.8rem ;
+        border-radius: 2rem;
+    }
+    .home{
+        flex-wrap:wrap ;
+    }
+    .home .image{
+        margin-top: 4rem;
+        width:60vw;
+    }
+
+    .about{
+        flex-wrap: wrap;
+    }
+    .about .about-img img{
+        width: 60vw;
+    }
+
+    .projects-wrap{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
 
 
