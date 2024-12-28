@@ -603,8 +603,40 @@ span{
     left: 90%;
     padding: .2rem .6rem;
 }
+
+/*---------------- Responsive  code main---------------*/
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 60%;
+    }
+    
+}
+@media screen and (max-width:991px)
+{
+    .header{
+        padding: 2rem 5%;
+    }
+    section{
+        padding: 10rem 5%;
+    }
+    .services{
+        padding:7rem;
+    }
+    section .skills-container
+    {
+        min-height: auto;
+    }
+    .contact{
+        min-height: auto;
+    }
+    .footer{
+        padding: 2rem 1%;
+    }
+
+}
+
 /*---------------- Responsive  code ---------------*/
-@media screen and (max-width:712px) {
+@media screen and (max-width:768px) {
     .contact form .input-box input{
         width:100%;
     }
@@ -624,18 +656,19 @@ span{
         background-color: var(--snd-bg-color); 
         padding: 3rem 0rem;
     }
+    .home{
+        flex-direction: column ;
+    }
     .home-content h1{
-        font-size: 2.6rem;
+        font-size: 4rem;
     }
     .home-content h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
-    .home{
-        flex-wrap:wrap ;
-    }
+   
     .home .image{
-        margin-top: 4rem;
-        width:60vw;
+        margin-top: 5rem;
+        width:70vw;
     }
 
     .about{
@@ -645,10 +678,40 @@ span{
         width: 60vw;
     }
 
+    
+    .skills-container h2{
+        margin-bottom: 3rem;
+    }
+    .skills h2{
+        margin-bottom: 3rem;
+    }
+    .resume .heading{
+        margin-bottom: 3rem;
+    }
     .projects-wrap{
         grid-template-columns: repeat(1,1fr);
     }
     
 }
+@media screen and (max-width:617px) {
+    .home .image{
+        margin-top: 6rem;
+        width:70vw;
+    }
+
+    .about .about-img img{
+        width: 60vw;
+        margin-top: 3rem;
+    }
+
+}
+@media screen and (max-width:450px) {
+    html{
+        width:55%;
+    }
+
+}
+
+
 
 
