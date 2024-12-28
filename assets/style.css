@@ -125,8 +125,8 @@ span{
 }
 .home-content p{
     font-size: 1.6rem;
-    letter-spacing: .1rem;
-    text-align: justify;
+    line-height: 2.7rem;
+    text-align: center;
 }
  .social-media{
     color:var(--main-color);
@@ -183,8 +183,8 @@ span{
 .about-content p{
     font-size: 1.6rem;
     padding-bottom: .6rem;
-    letter-spacing: .1rem;
-    text-align: justify;
+    line-height: 2.7rem;
+    text-align: center;
 }
 /*---------------- skills  section ---------------*/
 .skills h2{
