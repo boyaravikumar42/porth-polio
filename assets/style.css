@@ -125,8 +125,8 @@ span{
 }
 .home-content p{
     font-size: 1.6rem;
-    letter-spacing: .1rem;
-    text-align: center;
+    /*letter-spacing: .1rem;
+    text-align: center;*/
 }
  .social-media{
     color:var(--main-color);
@@ -186,8 +186,6 @@ span{
 .about-content p{
     font-size: 1.6rem;
     padding-bottom: .6rem;
-    letter-spacing: .1rem;
-    text-align: justify;
 }
 /*---------------- skills  section ---------------*/
 .skills h2{
@@ -436,7 +434,7 @@ span{
     left:0%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5),var(--main-color));
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(3, 8, 66, 0.7));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,7 +445,7 @@ span{
     
 }
 .project-box:hover .project-content{
-    transform: translateY(10%);
+    transform: translateY(0%);
 }
 
 .project-content h2{
@@ -455,7 +453,7 @@ span{
   font-size: 3rem;
 }
 .project-content p{
-    color:var(--bg-color);
+    color:var(--main-color);
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
@@ -472,7 +470,7 @@ span{
   .project-content a i{
     font-size: 3rem;
     color: var(--main-color);
-  }
+  }*/
   /*---------------- contact section ---------------*/
 .contact{
     background-color: var(--snd-bg-color);
@@ -623,7 +621,7 @@ span{
         padding: 2rem 5%;
     }
     section{
-        padding: 10rem 1%;
+        padding: 10rem 5%;
     }
     .services{
         padding:7rem;
@@ -664,16 +662,17 @@ span{
     }
     .home{
         flex-direction: column ;
+        gap:5rem;
     }
     .home-content h1{
         font-size: 4rem;
     }
     .home-content h2{
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
    
     .home .image{
-        margin-top: 5rem;
+        margin-top: 3rem;
         width:70vw;
     }
 
