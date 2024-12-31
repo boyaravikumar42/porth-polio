@@ -39,6 +39,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    box-shadow: 0 0 2px var(--main-color);
 }
 .navbar a{
     margin-left: 4rem;
@@ -69,7 +70,7 @@ body{
 /*--------- section styling -------------------*/
 section{
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 9% 10rem;
 }
 /*--------- home styling -------------------*/
 .home {
@@ -110,7 +111,7 @@ section{
 
 
 .home-content h2{
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 .home-content .home-h2{
@@ -301,11 +302,11 @@ span{
     padding-bottom: 3rem;
     text-align: center;
 }
-/*.resume-container{
-    display: grid;
+.resume-container{
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:2.4rem;
-}*/
+    gap:2.4rem;*/
+}
 
 .resume-container .content{
     padding: 1rem 1.4rem;
@@ -470,7 +471,7 @@ span{
   .project-content a i{
     font-size: 3rem;
     color: var(--main-color);
-  }*/
+  }
   /*---------------- contact section ---------------*/
 .contact{
     background-color: var(--snd-bg-color);
@@ -621,7 +622,7 @@ span{
         padding: 2rem 5%;
     }
     section{
-        padding: 10rem 5%;
+        padding: 10rem 5% 5rem;
     }
     .services{
         padding:7rem;
