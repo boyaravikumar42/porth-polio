@@ -81,7 +81,7 @@ section{
     
 }
 .home .image{
-    width: 35vw;
+    width: 50vw;
     border-radius: 50%;
     border: 2px solid var(--text-color);
     box-shadow: -5px 5px 20px var(--main-color);
@@ -397,8 +397,10 @@ span{
     font-size: 1.4rem;
 }
 
-/*---------------- project section ---------------*/
-
+/*---------------- project section (it mas not appear in the page) ---------------*/
+.projects{
+    display: none;
+}
 .projects .heading{
     font-size: 4rem;
     text-align: center;
@@ -472,6 +474,72 @@ span{
     font-size: 3rem;
     color: var(--main-color);
   }
+  /*---------------- proj2 section ---------------*/
+  .proj .heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+
+}
+  .proj-wrap{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    
+  }
+  .proj-wrap .card{
+    padding:2rem;
+    width: 1fr;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    background:var(--snd-bg-color);
+    border-radius: 3rem;
+    box-shadow: 0 0 .3rem var(--main-color);
+  }
+  .proj-wrap .card:hover{
+    box-shadow: 0 0 .5rem var(--main-color);
+    transform: scale(1.001s);
+  }
+  
+  .proj-wrap .card .proj-img img{
+    width:100%;
+    height:22rem;
+    border-radius: 3rem;
+    z-index: 500;
+  }
+  .proj-wrap .card h2{
+    font-size: 2.2rem;
+    color: var(--main-color);
+
+  }
+  .proj-wrap .card ul{
+    padding: .5rem 1.6rem;
+  }
+  .proj-wrap .card ul li
+  {
+    font-size:1.5rem;
+    padding-bottom: .5rem;
+    
+  }
+  .proj-wrap .card .btns{
+    display: flex;
+    gap:2rem;
+    & a{
+        padding: .6rem 2rem;
+    }
+    & .live{
+        color:var(--main-color);
+        background: transparent;
+        border:2px solid var(--main-color);
+
+    }
+    & .live:hover{
+        color:var(--bg-color);
+        background:var(--main-color);
+    }
+  }
   /*---------------- contact section ---------------*/
 .contact{
     background-color: var(--snd-bg-color);
@@ -527,10 +595,10 @@ span{
     position: fixed;
     left:0;
     bottom:0;
-    transform:translateY(30vh) ;
+    transform:translateY(25vh) ;
 }
 .skill-icons h1 i{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--main-color);
     animation: travel 5s linear infinite;
     
@@ -697,6 +765,10 @@ span{
     .projects-wrap{
         grid-template-columns: repeat(1,1fr);
     }
+    .proj-wrap{
+        grid-template-columns: repeat(2,1fr);
+        
+      }
     
 }
 @media screen and (max-width:617px) {
@@ -715,6 +787,10 @@ span{
     html{
         width:100%;
     }
+    .proj-wrap{
+        grid-template-columns: repeat(1,1fr);
+        
+      }
 
 }
 

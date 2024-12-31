@@ -1,4 +1,17 @@
-/*===== menu icon scripting======*/
+/*******====================
+		* 
+		* typing text in the front page
+		* 
+		===================**************/
+		var typed= new Typed(".span",{
+			strings:["CS Enthusiast","Full - stack Developer"],
+			typeSpeed:80,
+			backSpeed:80,
+			backDelay:800,
+			loop:true,
+		})
+        
+        /*===== menu icon scripting======*/
 const menuEnable=(e)=>
 {
     let bar=document.getElementById('bar') 
