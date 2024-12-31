@@ -111,7 +111,7 @@ section{
 
 
 .home-content h2{
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
 }
 .home-content .home-h2{
@@ -622,7 +622,7 @@ span{
         padding: 2rem 5%;
     }
     section{
-        padding: 10rem 5% 5rem;
+        padding: 10rem 5%;
     }
     .services{
         padding:7rem;
