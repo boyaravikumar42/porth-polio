@@ -47,12 +47,11 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
 
-   &:active,&:hover{
+}
+.header nav .active{
     color: var(--main-color);
     text-shadow: 3px 3px 10px var(--main-color);
    }
- 
-}
 /*--------- logo styling -------------------*/
 .header .logo{
     color: var(--main-color);
@@ -90,7 +89,6 @@ section{
     & img{
         width:100%;
         border-radius: 50%;
-
     }
 }
 @keyframes move {
@@ -717,8 +715,11 @@ span{
     .header #bar{
         display: block;
     }
-   
-    .navbar{
+    .header .active{
+        display: flex;
+    }
+    .navbar {
+        display: none;
         width:100%;
         height:auto;
         position: absolute;
@@ -730,9 +731,6 @@ span{
         background-color: var(--snd-bg-color); 
         padding: 3rem 0rem;
     }
-    .navbar .active{
-        display: flex;
-    }
     .home{
         flex-direction: column ;
         gap:5rem;
@@ -740,7 +738,7 @@ span{
     .home-content h1{
         font-size: 4rem;
     }
-    .home-content h2{
+    .home-content .home-h2{
         font-size: 2.6rem;
     }
    
