@@ -111,7 +111,7 @@ section{
 
 
 .home-content h2{
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 .home-content .home-h2{
@@ -126,8 +126,8 @@ span{
 }
 .home-content p{
     font-size: 1.6rem;
-    /*letter-spacing: .1rem;
-    text-align: center;*/
+    letter-spacing: .11rem;
+    
 }
  .social-media{
     color:var(--main-color);
@@ -186,6 +186,7 @@ span{
 }
 .about-content p{
     font-size: 1.6rem;
+    letter-spacing: .11rem;
     padding-bottom: .6rem;
 }
 /*---------------- skills  section ---------------*/
@@ -716,8 +717,8 @@ span{
     .header #bar{
         display: block;
     }
+   
     .navbar{
-        display:none;
         width:100%;
         height:auto;
         position: absolute;
@@ -728,6 +729,9 @@ span{
         gap: 2.4rem;
         background-color: var(--snd-bg-color); 
         padding: 3rem 0rem;
+    }
+    .navbar .active{
+        display: flex;
     }
     .home{
         flex-direction: column ;
