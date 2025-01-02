@@ -413,15 +413,15 @@
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="" class="input-wrapper">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" required/>
-                <input type="email" placeholder="Email Addres" required/>
+                <input type="text" placeholder="Full Name" value="" id="name" required/>
+                <input type="email" placeholder="Email Addres" value="" id="email" required/>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Mobile Number" required/>
-                <input type="text" placeholder="Email Subject" required/>
+                <input type="text" placeholder="Mobile Number" value="" id="phno" required/>
+                <input type="text" placeholder="Email Subject" value="" id="subject" required/>
             </div>
-            <textarea name="" id=""cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message"class="btn"/>
+            <textarea cols="30" rows="10" placeholder="Your Message" value="" id="message" required></textarea>
+            <input type="submit" value="Send Message"class="btn" onclick="sendMail()"/>
         </form>
     </section>
 
@@ -458,6 +458,17 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
      <!----------------- script Section -------------->
      <script src="./assets/script.js"></script>
+     <!----------------- email send apk -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "-GiuqwlR767f60r1l",
+                });
+            })();
+        </script>
      
 </body>
 </html>

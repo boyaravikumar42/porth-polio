@@ -53,7 +53,7 @@
 	});
 	/* -------------- scroll reveal of sections     -------------*/
 	ScrollReveal({
-		distance:'80px',
+		distance:'50px',
 		duration:2000,
 		delay:200,
 	});
@@ -61,3 +61,15 @@
 	ScrollReveal().reveal('.home-img,',{origin:'bottom'});
 	ScrollReveal().reveal('.home-content h1, .about-img, .row .title, .proj-wrap .card, .skill-bar',{origin:'left'});
 	ScrollReveal().reveal('.home-content p, .about-content, .skills-wrap, .contact form',{origin:'right'});
+	//email sending code
+	function sendMail(){
+		let params={
+		 name:document.getElementById("name").value,
+		 email:document.getElementById("email").value,
+		 phno:document.getElementById("phno").value,
+		 message:document.getElementById("message").value,
+		 subject:document.getElementById("subject").value,
+		}
+		emailjs.send("service_porth","template_zrr159e",params).then(alert("email sent !!.."))
+		console.log(params);
+		}
