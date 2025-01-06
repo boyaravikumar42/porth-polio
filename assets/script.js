@@ -70,6 +70,6 @@
 		 message:document.getElementById("message").value,
 		 subject:document.getElementById("subject").value,
 		}
-		emailjs.send("service_porth","template_zrr159e",params).then(alert("email sent !!.."))
+		emailjs.send("service_porth","template_zrr159e",params).then(/*alert("email sent !!..")*/)
 		console.log(params);
 		}
