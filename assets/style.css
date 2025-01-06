@@ -60,6 +60,7 @@ body{
     font-family: 'Nunito Sans',serif;
     & i{
         color: var(--text-color);
+        font-size: medium;
     }
 }
 .header #bar,.header #bar1{
