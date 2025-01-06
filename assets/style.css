@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Sixtyfour&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +35,6 @@ body{
     width: 100%;
     padding: 2rem 8%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
@@ -58,7 +57,10 @@ body{
     font-weight: 700;
     font-size: 2.4rem;
     cursor: default;
-
+    font-family: 'Nunito Sans',serif;
+    & i{
+        color: var(--text-color);
+    }
 }
 .header #bar,.header #bar1{
     display: none;
@@ -80,7 +82,7 @@ section{
     
 }
 .home .image{
-    width: 50vw;
+    width: 60vw;
     border-radius: 50%;
     border: 2px solid var(--text-color);
     box-shadow: -5px 5px 20px var(--main-color);
